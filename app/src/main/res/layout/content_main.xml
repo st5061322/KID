@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.niu.kid.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:id="@+id/pp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/home_bg_btn05">
+
+            <ImageButton
+                android:layout_width="170dp"
+                android:layout_height="60dp"
+                android:scaleType="center"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="170dp"
+                android:background="@drawable/home_btn_05" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/home_pic" />
+
+    </FrameLayout>
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:numColumns="2"
+        android:layout_below="@+id/pp">
+
+    </GridView>
+
+</RelativeLayout>
